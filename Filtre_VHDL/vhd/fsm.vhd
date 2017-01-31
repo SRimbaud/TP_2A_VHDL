@@ -28,8 +28,22 @@ type STATE is (S0,...);
 ...
 
 begin
-    P_STATE: process(...)
+    P_STATE: process(.	..)
     ...
-    P_FSM: process(...)
-    ...
+    P_FSM: process(Clk)
+    begin
+	if (Clk'event and clk = '1') then
+		if Reset = '1' then
+			Rom_Adress <= (others => '0');
+			Delay_Line_sample_Adresse <= (others => '0');
+			Accu_ctrl = '0';
+			Buff_OE = '0';
+			CLRb = '0';
+		else 
+			
+			
+    
+    
+    end process P_FSM;
+	    
 end A;

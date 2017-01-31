@@ -16,7 +16,10 @@ end DELAY_LINE;
 architecture A of DELAY_LINE is
   type   delay_line is array (0 to 31) of std_logic_vector(7 downto 0);
   signal x : delay_line;
-
+-- x est un vecteur de 32 nombres sur 8 bits.
+-- Si reset on met tout le vecteur x à 0.
+-- Si Delay_Line_sample_shift on enregistre + décalage
+-- Delay_Line_out c'est la valeur de x à l'adresse voulue.
 begin
   P_DL : process(CLK)
   begin

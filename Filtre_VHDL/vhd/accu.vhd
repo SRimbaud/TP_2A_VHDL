@@ -12,7 +12,9 @@ entity ACCU is
         Accu_out  : out std_logic_vector(20 downto 0)) ;
 
 end ACCU;
-
+-- Si reset ==> ACCU (accu_out) mis à 0.
+-- Si Accu_ctrl ==> on lit accu_in et concaténe avec 6 '0'.
+-- Sinon on ajoute Accu_in avec la valeur déjà présente dans l'accu.
 architecture A of ACCU is
   signal ACCU : unsigned(20 downto 0);
 begin
