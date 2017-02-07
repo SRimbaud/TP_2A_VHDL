@@ -109,7 +109,8 @@ begin
        assert t>= (30 ns)  report "new conversion starts 30 ns after a read" severity warning;
      -- A completer
 
-
+       Filter_In <= "11111111";
+ 
      end if;
   
    end process verif_time;

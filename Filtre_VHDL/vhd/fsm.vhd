@@ -27,7 +27,7 @@ end FSM;
 architecture A of FSM is
 	type state is (root,boucle,update_dl,l_buff,start_dac,over_dac,start_adc,over_adc);
 	signal c_state,n_state : state;
-	signal c_address,n_address : std_logic_vector(4 downto 0);
+	signal c_address,n_address : unsigned (4 downto 0);
 
 begin
     P_STATE: process(clk,reset)
@@ -60,18 +60,19 @@ begin
 	    DAC_WRb <= '1';
 	    DAC_csb <= '0' ;
 	    LDACb <= '0' ;
-	    CLRb <= '0' ;
+	    CLRb <= '1' ;
 
 
 	    case c_state is
 		    when root => -- Cas du reset
 			    n_address <= (others => '0' );
 			    CLRb <= '0' ;
+			    n_state <= boucle ;
 		    when boucle =>
 			    CLRb <= '1';
 			    n_address <= c_address + 1 ;
 
-			    if c_address = 2 then
+			    if c_address = 3 then
 				    n_state <= start_adc ;
 			    elsif c_address = 30 then
 				    n_state <= update_dl ;
@@ -93,6 +94,7 @@ begin
 		    when update_dl =>
 			    Delay_Line_sample_shift <= '1';
 			    ADC_Rdb <= '0';
+			    n_address <= (others => '0'); 
 			    n_state <= l_buff ;
 
 		    when l_buff =>
@@ -100,17 +102,17 @@ begin
 			    ADC_Rdb <= '1' ;
 			    Accu_ctrl <= '1';
 			    Buff_OE <= '1';
-			    n_address <= (others => '0') ;
+			    n_address <= c_address + 1;
 			    n_state <= start_dac ;
 
 		    when start_dac =>
 			    n_address <= c_address + 1 ; 
 			    Accu_ctrl <= '0' ;
 			    Buff_OE <= '0' ;
-			    n_state <= over_adc ;
+			    n_state <= over_dac ;
 
-		    when over_adc =>
-			    DAC_WRb <= '0';
+		    when over_dac =>
+			    DAC_WRb <= '0'; -- ne se met pas à zéro
 			    n_address <= c_address + 1 ; 
 			    n_state <= start_adc ;
 
