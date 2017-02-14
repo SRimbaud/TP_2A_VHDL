@@ -10,8 +10,8 @@ use modelsim_lib.util.all;
 
 -- Indiquer ici quelle bibliothèque du filtre à utiliser 
 -- (VHDL, après synthèse, après placement et routage)
-library lib_VHDL;
---library lib_SYNTH;
+--library lib_VHDL;
+library lib_SYNTH;
 
 entity bench_top is
 end entity;  -- bench_top

@@ -7,10 +7,8 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-vsim work.bench_top
-# vsim work.bench_top 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "FSM(A)".
+vsim lib_BENCH.bench_top(arch)
+# vsim lib_BENCH.bench_top(arch) 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -18,86 +16,170 @@ vsim work.bench_top
 # Loading ieee.math_real(body)
 # Loading modelsim_lib.util(body)
 # Loading work.bench_top(arch)#1
-# Loading lib_vhdl.filter(a)#1
-# Loading lib_vhdl.rom(a)#1
-# Loading lib_vhdl.delay_line(a)#1
-# Loading lib_vhdl.mult(a)#1
-# Loading lib_vhdl.accu(a)#1
-# Loading lib_vhdl.buff(a)#1
-# Loading lib_vhdl.fsm(a)#1
-add wave -position insertpoint  \
-sim:/bench_top/DUT/U6/Clk \
-sim:/bench_top/DUT/U6/Reset \
-sim:/bench_top/DUT/U6/ADC_Eocb \
-sim:/bench_top/DUT/U6/ADC_Convstb \
-sim:/bench_top/DUT/U6/ADC_Rdb \
-sim:/bench_top/DUT/U6/ADC_csb \
-sim:/bench_top/DUT/U6/DAC_WRb \
-sim:/bench_top/DUT/U6/DAC_csb \
-sim:/bench_top/DUT/U6/LDACb \
-sim:/bench_top/DUT/U6/CLRb \
-sim:/bench_top/DUT/U6/Rom_Address \
-sim:/bench_top/DUT/U6/Delay_Line_Address \
-sim:/bench_top/DUT/U6/Delay_Line_sample_shift \
-sim:/bench_top/DUT/U6/Accu_ctrl \
-sim:/bench_top/DUT/U6/Buff_OE \
-sim:/bench_top/DUT/U6/c_state \
-sim:/bench_top/DUT/U6/n_state \
-sim:/bench_top/DUT/U6/c_address \
-sim:/bench_top/DUT/U6/n_address
+# Loading unisim.vcomponents
+# Loading vital2000.vital_timing(body)
+# Loading simprim.vcomponents
+# Loading lib_synth.filter(a)#1
+# Loading lib_synth.accu(a_unfold_494)#1
+# Loading unisim.xorcy(xorcy_v)#1
+# Loading unisim.muxcy_l(muxcy_l_v)#1
+# Loading unisim.fdr(fdr_v)#1
+# Loading unisim.gnd(gnd_v)#1
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# ** Warning: (vsim-3479) Time unit 'ps' is less than the simulator resolution (1ns).
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top/DUT/U4/ix25032z1530
+# Loading unisim.lut3(lut3_v)#1
+# Loading unisim.lut2(lut2_v)#1
+# Loading lib_synth.mult_16_0(implementation)#1
+# Loading unisim.mult18x18(mult18x18_v)#1
+# Loading unisim.srlc16e(srlc16e_v)#1
+# Loading unisim.fdre(fdre_v)#1
+# Loading unisim.obuf(obuf_v)#1
+# Loading unisim.ibuf(ibuf_v)#1
+# Loading unisim.fdc(fdc_v)#1
+# Loading unisim.fdp(fdp_v)#1
+# Loading unisim.inv(inv_v)#1
+# Loading unisim.lut4(lut4_v)#1
+# Loading unisim.vcc(vcc_v)#1
+# Loading unisim.bufgp(bufgp_v)#1
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(20) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(11) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(10) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(0) has no driver.
+# This port will contribute value (U) to the signal network.
+do wave.do
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/Clk'.
+# Executing ONERROR command at macro ./wave.do line 3
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/Reset'.
+# Executing ONERROR command at macro ./wave.do line 4
 # ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
-run 2 us
-# ** Note: init_signal_spy [bench_top.vhd] : Mirroring the value of '/bench_top/DUT/Accu_out' onto '/bench_top/accu_out'.
-# ** Note: init_signal_spy [bench_top.vhd] : Mirroring the value of '/bench_top/DUT/Buff_OE' onto '/bench_top/buff_OE'.
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /bench_top/DUT/U2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /bench_top/DUT/U1
-run 2 us
-
-run 2 us
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U2/x'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/Delay_Line_Address'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/Delay_Line_sample_shift'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/Delay_Line_out'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/Rom_Address'.
+# Executing ONERROR command at macro ./wave.do line 11
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/Rom_out'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/Accu_ctrl'.
+# Executing ONERROR command at macro ./wave.do line 14
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/Accu_out'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/Buff_OE'.
+# Executing ONERROR command at macro ./wave.do line 16
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/ADC_Convstb'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/ADC_Eocb'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/ADC_Rdb'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/ADC_csb'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/DAC_WRb'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/DAC_csb'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/LDACb'.
+# Executing ONERROR command at macro ./wave.do line 26
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/CLRb'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/c_state'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/n_state'.
+# Executing ONERROR command at macro ./wave.do line 30
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/c_address'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U6/n_address'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/bench_top/DUT/U1/filter_rom'.
+# Executing ONERROR command at macro ./wave.do line 33
 add wave -position insertpoint  \
-sim:/bench_top/DUT/U6/Clk \
-sim:/bench_top/DUT/U6/Reset \
-sim:/bench_top/DUT/U6/ADC_Eocb \
-sim:/bench_top/DUT/U6/ADC_Convstb \
-sim:/bench_top/DUT/U6/ADC_Rdb \
-sim:/bench_top/DUT/U6/ADC_csb \
-sim:/bench_top/DUT/U6/DAC_WRb \
-sim:/bench_top/DUT/U6/DAC_csb \
-sim:/bench_top/DUT/U6/LDACb \
-sim:/bench_top/DUT/U6/CLRb \
-sim:/bench_top/DUT/U6/Rom_Address \
-sim:/bench_top/DUT/U6/Delay_Line_Address \
-sim:/bench_top/DUT/U6/Delay_Line_sample_shift \
-sim:/bench_top/DUT/U6/Accu_ctrl \
-sim:/bench_top/DUT/U6/Buff_OE \
-sim:/bench_top/DUT/U6/c_state \
-sim:/bench_top/DUT/U6/n_state \
-sim:/bench_top/DUT/U6/c_address \
-sim:/bench_top/DUT/U6/n_address
+sim:/bench_top/CLK \
+sim:/bench_top/RESET \
+sim:/bench_top/Filter_In \
+sim:/bench_top/Filter_Out \
+sim:/bench_top/ADC_eocb \
+sim:/bench_top/ADC_convstb \
+sim:/bench_top/ADC_rdb \
+sim:/bench_top/ADC_csb \
+sim:/bench_top/DAC_wrb \
+sim:/bench_top/DAC_csb \
+sim:/bench_top/DAC_ldacb \
+sim:/bench_top/DAC_clrb \
+sim:/bench_top/Buff_OE \
+sim:/bench_top/ADC_convstb_delayed \
+sim:/bench_top/ADC_eocb_delayed \
+sim:/bench_top/Accu_out \
+sim:/bench_top/filter_rom
+run
+# ** Error: (vsim-3569) init_signal_spy [bench_top.vhd] : Object '/bench_top/DUT/Accu_out' does not exist in the design.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top
+# ** Error: (vsim-3569) init_signal_spy [bench_top.vhd] : Object '/bench_top/DUT/Buff_OE' does not exist in the design.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top
+run
+run
+run 10 us
+# Causality operation skipped due to absence of debug database file
+add wave -position insertpoint  \
+sim:/bench_top/DUT/ix36612z15042/SHIFT_REG
 restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "FSM(A)".
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading modelsim_lib.util(body)
-# Loading work.bench_top(arch)#1
-# Loading lib_vhdl.filter(a)#1
-# Loading lib_vhdl.rom(a)#1
-# Loading lib_vhdl.delay_line(a)#1
-# Loading lib_vhdl.mult(a)#1
-# Loading lib_vhdl.accu(a)#1
-# Loading lib_vhdl.buff(a)#1
-# Loading lib_vhdl.fsm(a)#1
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(20) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(11) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(10) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /bench_top/DUT/U4/Accu_out(0) has no driver.
+# This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
-run 2 us
-# ** Note: init_signal_spy [bench_top.vhd] : Mirroring the value of '/bench_top/DUT/Accu_out' onto '/bench_top/accu_out'.
-# ** Note: init_signal_spy [bench_top.vhd] : Mirroring the value of '/bench_top/DUT/Buff_OE' onto '/bench_top/buff_OE'.
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /bench_top/DUT/U2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /bench_top/DUT/U1
+run
+# ** Error: (vsim-3569) init_signal_spy [bench_top.vhd] : Object '/bench_top/DUT/Accu_out' does not exist in the design.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top
+# ** Error: (vsim-3569) init_signal_spy [bench_top.vhd] : Object '/bench_top/DUT/Buff_OE' does not exist in the design.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_top
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/bench/wave2.do

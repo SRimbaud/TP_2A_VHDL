@@ -1,0 +1,129 @@
+# //  ModelSim SE-64 10.2c Jul 18 2013 Linux 3.2.0-4-amd64
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vsim -sdftyp /=/tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/par/rimbaudtrobo/netgen/par/FILTER_timesim.sdf -sdfnoerror -sdfnowarn -t 10ns -voptargs=+acc lib_SYNTH.filter
+# vsim -sdftyp /=/tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/par/rimbaudtrobo/netgen/par/FILTER_timesim.sdf -sdfnoerror -sdfnowarn -t 10ns -voptargs=+acc lib_SYNTH.filter 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading unisim.vcomponents
+# Loading vital2000.vital_timing(body)
+# ** Warning: (vsim-3479) Time unit 'ns' is less than the simulator resolution (10ns).
+#    Time: 0 ns  Iteration: 0  Root: /
+# Loading simprim.vcomponents
+# Loading work.filter(a)#1
+# Loading work.accu(a_unfold_494)#1
+# Loading unisim.xorcy(xorcy_v)#1
+# Loading unisim.muxcy_l(muxcy_l_v)#1
+# Loading unisim.fdr(fdr_v)#1
+# Loading unisim.gnd(gnd_v)#1
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# ** Warning: (vsim-3479) Time unit 'ps' is less than the simulator resolution (10ns).
+#    Time: 0 ns  Iteration: 0  Instance: /filter/U4/ix25032z1530
+# Loading unisim.lut3(lut3_v)#1
+# Loading unisim.lut2(lut2_v)#1
+# Loading work.mult_16_0(implementation)#1
+# Loading unisim.mult18x18(mult18x18_v)#1
+# Loading unisim.srlc16e(srlc16e_v)#1
+# Loading unisim.fdre(fdre_v)#1
+# Loading unisim.obuf(obuf_v)#1
+# Loading unisim.ibuf(ibuf_v)#1
+# Loading unisim.fdc(fdc_v)#1
+# Loading unisim.fdp(fdp_v)#1
+# Loading unisim.inv(inv_v)#1
+# Loading unisim.lut4(lut4_v)#1
+# Loading unisim.vcc(vcc_v)#1
+# Loading unisim.bufgp(bufgp_v)#1
+# Loading instances from /tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/par/rimbaudtrobo/netgen/par/FILTER_timesim.sdf
+# Loading timing data from /tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/par/rimbaudtrobo/netgen/par/FILTER_timesim.sdf
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(20) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(11) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(10) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Instance: /filter File: filtre_synth.vhd
+run
+run
+add wave -position insertpoint  \
+sim:/filter/Filter_In \
+sim:/filter/CLK \
+sim:/filter/Reset \
+sim:/filter/ADC_Eocb \
+sim:/filter/ADC_Convstb \
+sim:/filter/ADC_Rdb \
+sim:/filter/ADC_csb \
+sim:/filter/DAC_WRb \
+sim:/filter/DAC_csb \
+sim:/filter/LDACb \
+sim:/filter/CLRB \
+sim:/filter/Filter_Out \
+sim:/filter/Filter_Out_dup_0 \
+sim:/filter/Delay_Line_sample_shift \
+sim:/filter/Accu_ctrl \
+sim:/filter/Mult_out \
+sim:/filter/Rom_Address
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+restart
+# Loading instances from /tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/par/rimbaudtrobo/netgen/par/FILTER_timesim.sdf
+# Loading timing data from /tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/par/rimbaudtrobo/netgen/par/FILTER_timesim.sdf
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(20) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(11) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(10) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /filter/U4/Accu_out(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Instance: /filter File: filtre_synth.vhd
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run

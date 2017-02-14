@@ -1,0 +1,10 @@
+8:-out_dir
+83:/tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/synth/rimbaudtrobo_impl_1//rtlc.out
+10:-pipe_flow
+4:-vhf
+94:/tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/synth/rimbaudtrobo_impl_1//hdlAnalyze_vhdlfile
+25:-comment_transoff_regions
+13:-lib_map_file
+83:/tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/synth/rimbaudtrobo_impl_1//.jaguarc
+108:+incdir+/tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/vhd+/tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/synth
+17:+define+synthesis

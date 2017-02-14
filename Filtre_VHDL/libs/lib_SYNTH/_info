@@ -1,0 +1,153 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 d/tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/synth/rimbaudtrobo_impl_1
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+!s110 1487066023
+VhaXFjRaTcaD5^kJUgfWiG3
+04 6 1 work filter a 1
+=1-bc305bbfdcbc-58a2d3a5-3280a-3671
+o-quiet -auto_acc_if_foreign -work lib_SYNTH -sdftyp /tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/par/rimbaudtrobo/netgen/par/FILTER_timesim.sdf -suppress 1948 +acc
+n@_opt
+OL;O;10.2c;57
+Eaccu
+Z1 w1487061306
+Z2 DPx9 vital2000 12 vital_timing 0 22 4Obk6FzZz7P8i2>0<?dVb3
+Z3 DPx7 simprim 11 vcomponents 0 22 8O_3e6jZlmVG1KLDb4Q^E1
+Z4 DPx6 unisim 11 vcomponents 0 22 GSe5`g9<H?BhoL6KEg9iZ3
+Z5 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z7 d/tp/xph2sic/xph2sic008/TP_VHDL/Filtre_VHDL/fpga/synth/rimbaudtrobo_impl_1
+Z8 8filtre_synth.vhd
+Z9 Ffiltre_synth.vhd
+l0
+L16
+V6B4n@Bjjjf3z<Q42NW0DJ1
+Z10 OL;C;10.2c;57
+32
+Z11 !s110 1487065678
+Z12 !s108 1487065677.279567
+Z13 !s90 +acc|-work|lib_SYNTH|filtre_synth.vhd|
+Z14 !s107 filtre_synth.vhd|
+Z15 o+acc -work lib_SYNTH
+Z16 tOptimize_1164 0 Explicit 1 IgnoreVitalErrors 1 Show_VitalChecksWarnings 0
+!s100 C@AY=0@ZdbnC]alh=l<662
+!i10b 1
+!i111 0
+Aa_unfold_494
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 accu 0 22 6B4n@Bjjjf3z<Q42NW0DJ1
+l47
+L25
+V[Do@QbFj6FIdWQS6bNYec3
+R10
+32
+R11
+R12
+R13
+R14
+R15
+R16
+!s100 hjaS]X`]f4:gX[E>@j;eb1
+!i10b 1
+!i111 0
+Efilter
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+l0
+L339
+VM?9cB5j@3h<IQKJTnMA_G3
+R10
+32
+R11
+R12
+R13
+R14
+R15
+R16
+!s100 nf`bIN6=Den>=2?X=]2071
+!i10b 1
+!i111 0
+Aa
+R2
+R3
+R4
+R5
+R6
+DEx4 work 6 filter 0 22 M?9cB5j@3h<IQKJTnMA_G3
+l413
+L355
+VThGC>_^4AWdkala;e`FI62
+R10
+32
+R11
+R12
+R13
+R14
+R15
+R16
+!s100 =R_?`BN]IQ3UGAP9nQ1b70
+!i10b 1
+!i111 0
+Emult_16_0
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+l0
+L299
+VECVO_3Vm7eJDKKJL]z_ef3
+R10
+32
+R11
+R12
+R13
+R14
+R15
+R16
+!s100 W9j4RH8]VHePZ5M2_IB6C3
+!i10b 1
+!i111 0
+Aimplementation
+R2
+R3
+R4
+R5
+R6
+DEx4 work 9 mult_16_0 0 22 ECVO_3Vm7eJDKKJL]z_ef3
+l311
+L306
+VK;Hn0kk?Noi0fK@`zOA3T1
+R10
+32
+R11
+R12
+R13
+R14
+R15
+R16
+!s100 V:LYYM=aKdYH0YQ4mIoTQ2
+!i10b 1
+!i111 0
